@@ -104,93 +104,115 @@ $('.nav_mobile_panel .digital').click(function() {
   .tiPause(2000)
 
 
- //image hover
+ // bg colour hover
+ 
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
+ } else {
 
-  $('#whittakers img').mouseenter(function() {
-    $('img').addClass('hide_img');
-    $(this).removeClass('hide_img');
-    $('body').addClass('whittakers_bg');
-  });
+      $('#whittakers img').mouseenter(function() {
+        $('img').addClass('hide_img');
+        $(this).removeClass('hide_img');
+        $('body').addClass('whittakers_bg');
+      });
 
-  $('#whittakers img').mouseleave(function() {
-    $('img').removeClass('hide_img');
-    $('body').removeClass('whittakers_bg');
-  });
+      $('#whittakers img').mouseleave(function() {
+        $('img').removeClass('hide_img');
+        $('body').removeClass('whittakers_bg');
+      });
 
-   $('#lynch img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#lynch img').removeClass('hide_img');
-     $('body').addClass('lynch_bg');
-   });
+       $('#lynch img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#lynch img').removeClass('hide_img');
+         $('body').addClass('lynch_bg');
+       });
 
-   $('#lynch img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('lynch_bg');
-   });
+       $('#lynch img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('lynch_bg');
+       });
 
-   $('#wander img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#wander img').removeClass('hide_img');
-     $('body').addClass('wander_bg');
-   });
+       $('#wander img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#wander img').removeClass('hide_img');
+         $('body').addClass('wander_bg');
+       });
 
-   $('#wander img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('wander_bg');
-   });
+       $('#wander img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('wander_bg');
+       });
 
-   $('#graphicdesign img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#graphicdesign img').removeClass('hide_img');
-     $('body').addClass('graphicdesign_bg');
-   });
+       $('#graphicdesign img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#graphicdesign img').removeClass('hide_img');
+         $('body').addClass('graphicdesign_bg');
+       });
 
-   $('#graphicdesign img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('graphicdesign_bg');
-   });
+       $('#graphicdesign img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('graphicdesign_bg');
+       });
 
 
-   $('#mirror img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#mirror img').removeClass('hide_img');
-     $('body').addClass('mirror_bg');
-   });
+       $('#mirror img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#mirror img').removeClass('hide_img');
+         $('body').addClass('mirror_bg');
+       });
 
-   $('#mirror img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('mirror_bg');
-   });
+       $('#mirror img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('mirror_bg');
+       });
 
-   $('#forum img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#forum img').removeClass('hide_img');
-     $('body').addClass('forum_bg');
-   });
+       $('#forum img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#forum img').removeClass('hide_img');
+         $('body').addClass('forum_bg');
+       });
 
-   $('#forum img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('forum_bg');
-   });
+       $('#forum img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('forum_bg');
+       });
 
-   $('#spring img').mouseenter(function() {
-     $('img').addClass('hide_img');
-     $('#spring img').removeClass('hide_img');
-     $('body').addClass('spring_bg');
-   });
+       $('#spring img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $('#spring img').removeClass('hide_img');
+         $('body').addClass('spring_bg');
+       });
 
-   $('#spring img').mouseleave(function() {
-     $('img').removeClass('hide_img');
-     $('body').removeClass('spring_bg');
-   });
-
-  return;
-  } else {
+       $('#spring img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('spring_bg');
+       });
   };
 
+// remove hover on mobile
 
+    function hasTouch() {
+        return 'ontouchstart' in document.documentElement
+               || navigator.maxTouchPoints > 0
+               || navigator.msMaxTouchPoints > 0;
+    }
+
+    if (hasTouch()) { // remove all :hover stylesheets
+        try { // prevent exception on browsers not supporting DOM styleSheets properly
+            for (var si in document.styleSheets) {
+                var styleSheet = document.styleSheets[si];
+                if (!styleSheet.rules) continue;
+
+                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                    if (!styleSheet.rules[ri].selectorText) continue;
+
+                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                        styleSheet.deleteRule(ri);
+                    }
+                }
+            }
+        } catch (ex) {}
+    }
 
 
 

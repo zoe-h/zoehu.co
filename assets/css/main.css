@@ -46,7 +46,7 @@ a {
 
 .info {
   position: fixed;
-  height: min-content;
+  height: 30px;
   width: min-content;
   bottom: 20px;
   left: 20px;
