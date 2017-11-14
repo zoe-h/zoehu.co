@@ -6,30 +6,26 @@
   display: none;
 }
 
-.info {
-  display: none;
+
+p {
+  font-family: 'aktiv-grotesk';
 }
 
 .home_btn {
   position: fixed;
   top: 20px;
   right: 20px;
+  width: min-content;
   font-size: 30px;
   color: black;
   z-index: 4;
 }
 
-.back_btn:hover {
-  text-decoration: underline;
+.home_btn:hover {
+  transform: translateX(-10px);
+  transition: 0.2s;
 }
 
-.next_btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: black;
-}
 
 .project_info {
   width: 600px;
@@ -42,7 +38,7 @@
   font-size: 20px;
   line-height: 100%;
   text-align: center;
-  text-decoration: underline;
+
 }
 
 .project_description {
@@ -64,10 +60,7 @@
   cursor: url('../images/cursor_circle_white.png') 50 50, auto;
 }
 
-.images img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
+
 
 .video-container {
 	position:relative;
@@ -116,8 +109,12 @@
   .home_btn {
     position: relative;
     margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%)
+  }
 
-    text-align: center;
+  .info {
+    right: 20px;
   }
 
 
