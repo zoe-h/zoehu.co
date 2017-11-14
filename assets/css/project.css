@@ -106,18 +106,19 @@
     padding-right: 20px;
   }
 
-  .home_btn {
-    position: fixed;
-    top: 25px;
-    left: 20px;
-    font-size: 20px;
-  }
-
   .next_btn {
     position: fixed;
     top: 25px;
     right: 20px;
     font-size: 20px;
   }
+
+  .home_btn {
+    position: relative;
+    margin-top: 40px;
+
+    text-align: center;
+  }
+
 
 }
