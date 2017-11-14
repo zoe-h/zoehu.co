@@ -91,7 +91,7 @@ a {
   right: 20px;
   font-size: 20px;
   display: none;
-  z-index: 7;
+  z-index: 5;
   cursor: url('../images/cursor_circle_red.png') 9 9, auto;
 }
 
@@ -163,8 +163,7 @@ a {
 }
 
 .project {
-  padding: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .hide_project {
@@ -325,4 +324,16 @@ img.hide_img {
     img:hover {
       transform: none !important;
     }
+}
+
+@media screen and (min-width: 1800px) {
+
+  .project_container {
+    width: 800px;
+  }
+
+  .project {
+    margin-bottom: 200px;
+  }
+
 }

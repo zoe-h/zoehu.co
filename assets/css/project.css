@@ -26,9 +26,16 @@ p {
   transition: 0.2s;
 }
 
+.home_btn_bottom {
+  font-size: 30px;
+  width: min-content;
+  margin: auto;
+  margin-top: 40px;
+  display: none;
+}
 
 .project_info {
-  width: 600px;
+  width: 500px;
   margin: auto;
   margin-top: 80px;
   margin-bottom: 50px;
@@ -43,6 +50,7 @@ p {
 
 .project_description {
   font-size: 15px;
+  line-height: 130%;
   text-transform: none;
   text-align: center;
 }
@@ -60,7 +68,14 @@ p {
   cursor: url('../images/cursor_circle_white.png') 50 50, auto;
 }
 
-
+.caption {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 0 50px 0 50px;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: center;
+}
 
 .video-container {
 	position:relative;
@@ -90,13 +105,22 @@ p {
   }
 
   .project_description {
-    text-align: left;
   }
 
   .images {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .images img {
+    margin-bottom: 20px;
+  }
+
+  .caption {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .next_btn {
@@ -106,16 +130,24 @@ p {
     font-size: 20px;
   }
 
-  .home_btn {
-    position: relative;
-    margin-top: 40px;
-    left: 50%;
-    transform: translateX(-50%)
+
+  .home_btn_bottom {
+    display: block;
   }
 
   .info {
     right: 20px;
   }
+
+
+}
+
+@media screen and (min-width: 1800px) {
+
+  .images {
+    width: 800px;
+  }
+
 
 
 }
