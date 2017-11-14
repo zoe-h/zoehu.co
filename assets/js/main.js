@@ -105,7 +105,8 @@ $('.nav_mobile_panel .digital').click(function() {
 
 
  //image hover
-if(screen.width > 768) {
+ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
 
   $('#whittakers img').mouseenter(function() {
     $('img').addClass('hide_img');
@@ -152,17 +153,6 @@ if(screen.width > 768) {
    });
 
 
-//    $('#sock img').mouseenter(function() {
-//      $('img').addClass('hide_img');
-//      $('#sock img').removeClass('hide_img');
-//      $('body').addClass('sock_bg');
-//    });
-
-//    $('#sock img').mouseleave(function() {
-//      $('img').removeClass('hide_img');
-//        $('body').removeClass('sock_bg');
-//    });
-
    $('#mirror img').mouseenter(function() {
      $('img').addClass('hide_img');
      $('#mirror img').removeClass('hide_img');
@@ -198,7 +188,6 @@ if(screen.width > 768) {
 
   return;
   } else {
-
   };
 
 
