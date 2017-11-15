@@ -105,7 +105,7 @@ $('.nav_mobile_panel .digital').click(function() {
 
 
  // bg colour hover
- 
+
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
  } else {
@@ -186,6 +186,28 @@ $('.nav_mobile_panel .digital').click(function() {
        $('#spring img').mouseleave(function() {
          $('img').removeClass('hide_img');
          $('body').removeClass('spring_bg');
+       });
+
+       $('#doomsday img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $(this).removeClass('hide_img');
+         $('body').addClass('doomsday_bg');
+       });
+
+       $('#doomsday img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('doomsday_bg');
+       });
+
+       $('#skepticism img').mouseenter(function() {
+         $('img').addClass('hide_img');
+         $(this).removeClass('hide_img');
+         $('body').addClass('skepticism_bg');
+       });
+
+       $('#skepticism img').mouseleave(function() {
+         $('img').removeClass('hide_img');
+         $('body').removeClass('skepticism_bg');
        });
   };
 

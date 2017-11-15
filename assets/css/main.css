@@ -226,7 +226,15 @@ img.hide_img {
 }
 
 .spring_bg {
+  background-color: #ffd546;
+}
+
+.doomsday_bg {
   background-color: blue;
+}
+
+.skepticism_bg {
+  background-color: rgb(254,62,28);
 }
 
 

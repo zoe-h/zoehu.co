@@ -29,7 +29,7 @@ p {
 .home_btn_bottom {
   font-size: 30px;
   width: min-content;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 40px;
   display: none;
 }
@@ -53,6 +53,10 @@ p {
   line-height: 130%;
   text-transform: none;
   text-align: center;
+}
+
+.project_description a, .caption a {
+  text-decoration: underline;
 }
 
 .images {
