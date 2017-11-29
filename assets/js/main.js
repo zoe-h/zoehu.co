@@ -3,9 +3,8 @@ $(document).ready(function() {
 // Add jQuery here
 
 //filter
-$('.nav .selected').click(function() {
-  $('.project').addClass('hide_project');
-  $('.project.selected').removeClass('hide_project');
+$('.nav .all').click(function() {
+  $('.project').removeClass('hide_project');
 });
 
 $('.nav .motion').click(function() {
@@ -41,10 +40,9 @@ $('.nav_mobile_panel').click(function() {
 });
 
 
-$('.nav_mobile_panel .selected').click(function() {
+$('.nav_mobile_panel .all').click(function() {
   $('.project').addClass('hide_project');
-  $('.project.selected').removeClass('hide_project');
-  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+  $('.project').removeClass('hide_project');
 });
 
 $('.nav_mobile_panel .motion').click(function() {
