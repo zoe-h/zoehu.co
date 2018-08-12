@@ -14,7 +14,7 @@ body {
   padding: 10px;
   background-color: white;
   color: black;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 120%;
   font-family: Helvetica;
 
@@ -38,22 +38,9 @@ div {
 }
 
 .about {
-  width: 600px;
+  width: 550px;
 }
 
-
-
-.contact div {
- margin-bottom: 0;
-}
-
-.goodbye {
-  display: none;
-}
-
-.goodbye.show {
-  display: inline-block;
-}
 
 a {
   color:inherit;
@@ -64,12 +51,9 @@ a {
    color: red;
  }
 
-.instagram-link:hover {
-   top: -20px;
- }
 
 sup {
-  top: -20px;
+  top: -15px;
   font-size: 15px;
 }
 
