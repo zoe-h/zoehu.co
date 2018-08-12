@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     });
 
-    $(".instagram-link, .email-link").click(function() {
+    $("a").click(function() {
       index--;
     });
 
