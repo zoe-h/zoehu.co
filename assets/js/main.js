@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   var fonts = ["Helvetica", "Times"];
   var index = 0;
-    $("body").click(function() {
+    $("html").click(function() {
       index++;
       if (index >= fonts.length)
         index = 0;
