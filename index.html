@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zoe Hu is a Melbourne based designer working across print, digital and motion." />
-    <title>ZOE HU</title>
-    <!--custom css-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!--do not touch js-->
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-    <!--custom js-->
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>
-    <!--Google Analytics-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125410682-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-125410682-1');
-    </script>
+    <title>Zoe Hu</title>
   </head>
   <body>
 
-    <!-- Start here -->
-    <div class="typewriter_name"></div>
-    <div class="about">
-      I'm a multi-disciplinary designer based in Melbourne, Australia. I work across print, digital and motion to create beautiful design solutions with depth, thought and strategy. Currently at <a href="https://cleardesign.com.au" onclick="trackOutboundLink('https://cleardesign.com.au'); return false;">Clear.<sup>&#8599;&#xFE0E</sup></a>
+    <!-- The video -->
+    <div class="vimeo-wrapper">
+       <iframe src="https://player.vimeo.com/video/327696837?background=1&autoplay=1&muted=1&loop=1&byline=0&title=0"
+               frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 
-<div class="instagram">
-      View my work on
-      <a class="instagram-link" href="http://instagram.com/zoehudesign" onclick="trackOutboundLink('http://instagram.com/zoehudesign'); return false;">
-        Instagram<sup>&#8599;&#xFE0E</sup>
-      </a>
-</div>
 
 
-<div class="email">
-  Contact me at
-  <a class="email-link" href="mailto:hello@zoehu.co" onclick="trackOutboundLink('mailto:hello@zoehu.co'); return false;">
-    hello@zoehu.co<sup>&#8599;&#xFE0E</sup>
-  </a>
-</div>
-
-
-
-
-
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <div class="title">ZOE HU</div>
+      <div class="info-button"><p>INFO</p></div>
+    </div>
+    <div class="info-panel hide">
+      <div class="title">ZOE WHO?</div>
+      <div class="info-close"><p>CLOSE</p></div>
+      <div class="info-text">
+        <p>Zoe is a designer, animator, sometimes-coder, swimmer and human being based in Melbourne, Australia.<br><br>
+        Follow her work on <a href="https://instagram.com/zoehudesign">Instagram</a><br>
+        Contact her at <a href="mailto:hello@zoehu.co">hello@zoehu.co</a></p>
+      </div>
+    </div>
 
   </body>
 </html>
