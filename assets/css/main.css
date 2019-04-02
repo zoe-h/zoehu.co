@@ -38,13 +38,14 @@ html {
 
 
 a {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: solid 1px white;
 	cursor: pointer;
 	color: white;
 }
 
 a:hover {
-	text-decoration: none;
+	border-bottom: none;
 }
 
 
@@ -61,6 +62,14 @@ a:hover {
 .info-text {
 	align-self: flex-end;
 	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.info-text {
+		align-self: flex-end;
+		padding-bottom: 40px;
+		width: 100%;
+	}
 }
 
 
