@@ -16,4 +16,14 @@ $(document).ready(function () {
     });
 
 
+
+        $('.design-motion').hover(function () {
+            $('#motion').addClass('motion-effect');
+        });
+
+
+
+
+
+
 });

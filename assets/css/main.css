@@ -1,14 +1,28 @@
 body {
 	font-family: helvetica;
-	font-size: 22px;
+	font-size: 15px;
 	color: white;
 	cursor: default;
-	line-height: 1.3;
-
+	line-height: 1.5;
+	overflow-x: hidden;
 }
 
+@media only screen and (min-width: 1400px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	body {
+		font-size: 20px;
+	}
+}
+
+
+
 ::selection {
-	color: black;
+
 }
 
 html {
@@ -72,33 +86,76 @@ a:hover {
 	}
 }
 
-/** video **/
 
 
-.videoBg{
-    position:absolute;
 
-    z-index:-1;
+/* Resume */
+
+.nav {
+	display: flex;
 }
 
-@media (min-aspect-ratio: 16/9) {
-      .videoBg{
-				top: 0;
-				left: 0;
-        width: 100%;
-        height: auto;
-      }
- }
+.title-2 {
+	width: 25%;
+}
 
-@media (max-aspect-ratio: 16/9) {
-      .videoBg {
-        width:100%;
-        padding:0;
-				top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-      }
+.design-motion {
+	width: 50%;
+}
 
-video{
-  object-fit:cover
+.showreel-folio {
+	width: 25%;
+	text-align: right;
+}
+
+.resume-content {
+	with: 100%;
+	margin-left: 25%;
+	margin-top: 15%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+th {
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.grey {
+	color: grey;
+}
+
+.year {
+	width: 100px;
+}
+
+table {
+	display: flex;
+		flex-basis: 50%;
+		margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+	table {
+		flex-basis: 100%;
+	}
+	.education {
+		order: 1;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.resume-content {
+		margin-left: 0;
+	}
+	.design-motion {
+		display: none;
+	}
+	.title-2 {
+		width: 50%;
+	}
+	.showreel-folio {
+		width: 50%;
+		text-align: right;
+	}
 }
