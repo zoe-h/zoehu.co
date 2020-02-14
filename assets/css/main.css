@@ -40,6 +40,7 @@ html {
 
 .title, .info-button, .info-close {
 	width: 50%;
+	height: 50px;
 }
 
 .info-button, .info-close {
@@ -74,15 +75,22 @@ a:hover {
 
 
 .info-text {
-	align-self: flex-end;
-	width: 100%;
+	height: 50%;
+	margin: auto;
+	align-self: center;
+	width: auto;
+	text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-	.info-text {
-		align-self: flex-end;
-		padding-bottom: 40px;
-		width: 100%;
+.info-text p {
+	width: 400px;
+	display: inline-block
+}
+
+
+@media only screen and (max-width: 400px) {
+	.info-text p {
+		width: auto;
 	}
 }
 
@@ -111,7 +119,7 @@ a:hover {
 .resume-content {
 	with: 100%;
 	margin-left: 25%;
-	margin-top: 15%;
+	margin-top: 20vh;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -135,6 +143,10 @@ table {
 		margin-bottom: 30px;
 }
 
+.resume-contact {
+	order: 1;
+}
+
 @media only screen and (max-width: 1200px) {
 	table {
 		flex-basis: 100%;
@@ -142,9 +154,12 @@ table {
 	.education {
 		order: 1;
 	}
+	.resume-contact {
+		padding-bottom: 80px;
+	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	.resume-content {
 		margin-left: 0;
 	}
