@@ -20,6 +20,12 @@ body {
 }
 
 
+@media only screen and (min-width: 2000px) {
+	body {
+		font-size: 22px;
+	}
+}
+
 
 ::selection {
 
@@ -162,6 +168,7 @@ table {
 @media only screen and (max-width: 500px) {
 	.resume-content {
 		margin-left: 0;
+		margin-top: 10vh;
 	}
 	.design-motion {
 		display: none;
